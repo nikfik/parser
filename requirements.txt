@@ -1,0 +1,10 @@
+selenium>=4.20
+beautifulsoup4>=4.12
+lxml>=5.0
+requests>=2.31
+pandas>=2.0
+openpyxl>=3.1
+matplotlib>=3.8
+psutil>=5.9
+pytest>=8.0
+reportlab>=4.0

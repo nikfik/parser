@@ -1,0 +1,6 @@
+20:59:50 INFO    MainThread start: http://localhost:3000, headless=False, przeglądarek=1, opóźnienie=0.50 s
+20:59:56 INFO    MainThread porcja 1: 20 kart
+20:59:56 INFO    MainThread lista: 20 rekordów, 1 porcji
+20:59:56 INFO    MainThread podstrony do pobrania: 20 (pominięte z checkpointu: 0)
+21:01:39 INFO    MainThread podstrony: 20/20
+21:01:41 INFO    MainThread PODSUMOWANIE: {"mode": "selenium", "headless": false, "workers": 1, "elapsed_s": 110.7, "peak_memory_mb": 739.2, "feed_batches": 1, "pages_visited": 21, "records_feed": 20, "records_with_detail": 20, "records_final": 20, "errors": 0, "retries": 0, "requests": 62, "dedup": {"before": 20, "duplicates_by_id": 0, "duplicates_by_content": 0, "after": 20}, "finished": "2026-10-14T21:01:41"}

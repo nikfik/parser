@@ -1,0 +1,5 @@
+20:57:36 INFO    MainThread pobrano 100 rekordów
+20:57:39 INFO    MainThread pobrano 200 rekordów
+20:57:42 INFO    MainThread pobrano 300 rekordów
+20:57:42 INFO    MainThread pobrano 400 rekordów
+20:57:46 INFO    MainThread PODSUMOWANIE: {"mode": "api", "elapsed_s": 11.2, "peak_memory_mb": 106.5, "requests": 5, "records_final": 400, "errors": 0, "retries": 0, "http_429": 0, "dedup": {"before": 400, "duplicates_by_id": 0, "duplicates_by_content": 0, "after": 400}, "finished": "2026-10-14T20:57:46"}

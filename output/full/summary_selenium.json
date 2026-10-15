@@ -1,0 +1,22 @@
+{
+  "mode": "selenium",
+  "headless": true,
+  "workers": 3,
+  "elapsed_s": 864.1,
+  "peak_memory_mb": 1981.0,
+  "feed_batches": 40,
+  "pages_visited": 401,
+  "records_feed": 400,
+  "records_with_detail": 400,
+  "records_final": 400,
+  "errors": 0,
+  "retries": 0,
+  "requests": 1241,
+  "dedup": {
+    "before": 400,
+    "duplicates_by_id": 0,
+    "duplicates_by_content": 0,
+    "after": 400
+  },
+  "finished": "2026-10-14T20:57:26"
+}

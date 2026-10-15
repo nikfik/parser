@@ -1,0 +1,171 @@
+18:04:05 INFO    start: http://localhost:3000, headless=True, przeglądarek=1, opóźnienie=0.50 s
+18:04:11 INFO    porcja 1: 20 kart
+18:04:11 INFO    lista: 12 rekordów, 1 porcji
+18:04:13 INFO    start: http://localhost:3000, headless=True, przeglądarek=1, opóźnienie=0.50 s
+18:04:30 INFO    podstrony: 3/3
+18:04:44 INFO    start: http://localhost:3000, headless=True, przeglądarek=1, opóźnienie=0.50 s
+18:04:50 INFO    porcja 1: 20 kart
+18:04:50 INFO    lista: 12 rekordów, 1 porcji
+18:04:53 INFO    start: http://localhost:3000, headless=True, przeglądarek=1, opóźnienie=0.50 s
+18:05:04 INFO    podstrony: 3/3
+18:05:23 INFO    start: http://localhost:3000, headless=True, przeglądarek=1, opóźnienie=0.50 s
+18:05:27 INFO    porcja 1: 20 kart
+18:05:27 INFO    lista: 12 rekordów, 1 porcji
+18:05:30 INFO    start: http://localhost:3000, headless=True, przeglądarek=1, opóźnienie=0.50 s
+18:05:49 INFO    podstrony: 3/3
+18:06:47 INFO    start: http://localhost:3000, headless=False, przeglądarek=1, opóźnienie=0.50 s
+18:06:49 WARNING otwarcie /feed: próba 1/5 nieudana (WebDriverException: Message: unknown error: net::ERR_CONNECTION_REFUSED) - ponawiam za 1.0 s
+18:06:50 WARNING otwarcie /feed: próba 2/5 nieudana (WebDriverException: Message: unknown error: net::ERR_CONNECTION_REFUSED) - ponawiam za 2.0 s
+18:06:52 WARNING otwarcie /feed: próba 3/5 nieudana (WebDriverException: Message: unknown error: net::ERR_CONNECTION_REFUSED) - ponawiam za 4.0 s
+18:06:56 WARNING otwarcie /feed: próba 4/5 nieudana (InvalidSessionIdException: Message: invalid session id: session deleted as the browser has closed the connection) - ponawiam za 8.0 s
+18:07:04 ERROR   otwarcie /feed: porażka po 5 próbach (InvalidSessionIdException)
+18:07:06 INFO    start: http://localhost:3000, headless=False, przeglądarek=1, opóźnienie=0.50 s
+18:07:08 WARNING otwarcie /feed: próba 1/5 nieudana (WebDriverException: Message: unknown error: net::ERR_CONNECTION_REFUSED) - ponawiam za 1.0 s
+18:07:09 WARNING otwarcie /feed: próba 2/5 nieudana (WebDriverException: Message: unknown error: net::ERR_CONNECTION_REFUSED) - ponawiam za 2.0 s
+18:07:11 WARNING otwarcie /feed: próba 3/5 nieudana (InvalidSessionIdException: Message: invalid session id: session deleted as the browser has closed the connection) - ponawiam za 4.0 s
+18:07:15 WARNING otwarcie /feed: próba 4/5 nieudana (InvalidSessionIdException: Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdr) - ponawiam za 8.0 s
+18:07:23 ERROR   otwarcie /feed: porażka po 5 próbach (InvalidSessionIdException)
+18:07:29 INFO    start: http://localhost:3000, headless=False, przeglądarek=1, opóźnienie=0.50 s
+18:07:31 WARNING otwarcie /feed: próba 1/5 nieudana (WebDriverException: Message: unknown error: net::ERR_CONNECTION_REFUSED) - ponawiam za 1.0 s
+18:07:32 WARNING otwarcie /feed: próba 2/5 nieudana (WebDriverException: Message: unknown error: net::ERR_CONNECTION_REFUSED) - ponawiam za 2.0 s
+18:07:34 WARNING otwarcie /feed: próba 3/5 nieudana (WebDriverException: Message: unknown error: net::ERR_CONNECTION_REFUSED) - ponawiam za 4.0 s
+18:07:38 WARNING otwarcie /feed: próba 4/5 nieudana (WebDriverException: Message: unknown error: net::ERR_CONNECTION_REFUSED) - ponawiam za 8.0 s
+18:07:46 ERROR   otwarcie /feed: porażka po 5 próbach (InvalidSessionIdException)
+18:12:47 INFO    start: http://localhost:3000, headless=False, przeglądarek=1, opóźnienie=0.50 s
+18:12:53 INFO    porcja 1: 20 kart
+18:12:55 INFO    porcja 2: 30 kart
+18:12:58 INFO    porcja 3: 40 kart
+18:13:01 INFO    porcja 4: 50 kart
+18:13:03 INFO    porcja 5: 60 kart
+18:13:04 INFO    porcja 6: 70 kart
+18:13:07 INFO    porcja 7: 80 kart
+18:13:09 INFO    porcja 8: 90 kart
+18:13:30 WARNING doładowanie porcji (po 90 kartach): próba 1/5 nieudana (TimeoutException: Message: ) - ponawiam za 1.0 s
+18:13:51 WARNING doładowanie porcji (po 90 kartach): próba 2/5 nieudana (TimeoutException: Message: ) - ponawiam za 2.0 s
+18:13:55 INFO    porcja 9: 100 kart
+18:13:56 INFO    porcja 10: 110 kart
+18:13:57 INFO    porcja 11: 120 kart
+18:13:58 INFO    porcja 12: 130 kart
+18:13:59 INFO    porcja 13: 140 kart
+18:14:02 INFO    porcja 14: 150 kart
+18:14:05 INFO    porcja 15: 160 kart
+18:14:09 INFO    porcja 16: 170 kart
+18:14:10 INFO    porcja 17: 180 kart
+18:14:12 INFO    porcja 18: 190 kart
+18:14:12 WARNING zatrzymano na żądanie użytkownika
+18:14:13 INFO    lista: 190 rekordów, 18 porcji
+18:14:23 INFO    start: http://localhost:3000, headless=False, przeglądarek=10, opóźnienie=0.50 s
+18:14:39 INFO    porcja 1: 20 kart
+18:14:42 INFO    porcja 2: 30 kart
+18:14:44 INFO    porcja 3: 40 kart
+18:14:45 INFO    porcja 4: 50 kart
+18:14:48 INFO    porcja 5: 60 kart
+18:14:49 INFO    porcja 6: 70 kart
+18:14:53 INFO    porcja 7: 80 kart
+18:14:53 INFO    porcja 8: 90 kart
+18:14:55 INFO    porcja 9: 100 kart
+18:14:55 INFO    porcja 10: 110 kart
+18:14:56 INFO    porcja 11: 120 kart
+18:15:00 INFO    porcja 12: 130 kart
+18:15:03 INFO    porcja 13: 140 kart
+18:15:05 INFO    porcja 14: 150 kart
+18:15:08 INFO    porcja 15: 160 kart
+18:15:09 INFO    porcja 16: 170 kart
+18:15:10 WARNING zatrzymano na żądanie użytkownika
+18:15:10 INFO    lista: 170 rekordów, 16 porcji
+18:15:36 INFO    start: http://localhost:3000, headless=False, przeglądarek=1, opóźnienie=0.50 s
+18:15:41 INFO    porcja 1: 20 kart
+18:15:44 INFO    porcja 2: 30 kart
+18:15:44 INFO    porcja 3: 40 kart
+18:15:45 INFO    porcja 4: 50 kart
+18:15:46 INFO    lista: 50 rekordów, 4 porcji
+18:15:57 INFO    start: http://localhost:3000, headless=False, przeglądarek=1, opóźnienie=0.50 s
+18:16:03 INFO    podstrony: 1/1
+18:16:12 INFO    start: http://localhost:3000, headless=False, przeglądarek=1, opóźnienie=0.50 s
+18:17:03 INFO    podstrony: 9/9
+18:17:49 INFO    start: http://localhost:3000, headless=True, przeglądarek=1, opóźnienie=0.50 s
+18:18:34 INFO    podstrony: 20/40
+18:18:34 INFO    podstrony: 40/40
+18:18:40 INFO    start: http://localhost:3000, headless=True, przeglądarek=1, opóźnienie=0.50 s
+18:19:03 INFO    podstrony: 20/32
+18:19:03 INFO    podstrony: 32/32
+18:19:13 INFO    start: http://localhost:3000, headless=True, przeglądarek=1, opóźnienie=0.50 s
+18:19:20 INFO    podstrony: 20/28
+18:19:20 INFO    podstrony: 28/28
+18:19:25 INFO    start: http://localhost:3000, headless=True, przeglądarek=1, opóźnienie=1.00 s
+18:19:33 INFO    podstrony: 20/27
+18:19:33 INFO    podstrony: 27/27
+18:19:39 INFO    start: http://localhost:3000, headless=True, przeglądarek=2, opóźnienie=0.50 s
+18:20:35 INFO    podstrony: 20/26
+18:20:51 INFO    podstrony: 26/26
+18:22:36 INFO    start: http://localhost:3000, headless=False, przeglądarek=2, opóźnienie=0.50 s
+18:22:41 INFO    porcja 1: 20 kart
+18:22:42 INFO    porcja 2: 30 kart
+18:22:44 INFO    porcja 3: 40 kart
+18:22:47 INFO    porcja 4: 50 kart
+18:22:50 INFO    porcja 5: 60 kart
+18:22:53 INFO    porcja 6: 70 kart
+18:22:53 INFO    lista: 70 rekordów, 6 porcji
+18:23:04 INFO    start: http://localhost:3000, headless=False, przeglądarek=2, opóźnienie=0.50 s
+18:23:31 INFO    podstrony: 20/20
+18:23:47 INFO    start: http://localhost:3000, headless=True, przeglądarek=1, opóźnienie=0.50 s
+18:23:50 INFO    porcja 1: 20 kart
+18:23:51 INFO    porcja 2: 30 kart
+18:23:53 INFO    porcja 3: 40 kart
+18:23:54 INFO    porcja 4: 50 kart
+18:23:56 INFO    porcja 5: 60 kart
+18:23:57 INFO    porcja 6: 70 kart
+18:24:01 INFO    porcja 7: 80 kart
+18:24:02 INFO    porcja 8: 90 kart
+18:24:03 INFO    porcja 9: 100 kart
+18:24:04 INFO    porcja 10: 110 kart
+18:24:06 INFO    porcja 11: 120 kart
+18:24:09 INFO    porcja 12: 130 kart
+18:24:13 INFO    porcja 13: 140 kart
+18:24:16 INFO    porcja 14: 150 kart
+18:24:19 INFO    porcja 15: 160 kart
+18:24:22 INFO    porcja 16: 170 kart
+18:24:24 INFO    porcja 17: 180 kart
+18:24:26 INFO    porcja 18: 190 kart
+18:24:28 INFO    porcja 19: 200 kart
+18:24:31 INFO    porcja 20: 210 kart
+18:24:33 INFO    porcja 21: 220 kart
+18:24:35 INFO    porcja 22: 230 kart
+18:24:36 INFO    porcja 23: 240 kart
+18:24:37 INFO    porcja 24: 250 kart
+18:24:40 INFO    porcja 25: 260 kart
+18:24:41 INFO    porcja 26: 270 kart
+18:24:45 INFO    porcja 27: 280 kart
+18:24:48 INFO    porcja 28: 290 kart
+18:24:52 INFO    porcja 29: 300 kart
+18:24:54 INFO    porcja 30: 310 kart
+18:24:58 INFO    porcja 31: 320 kart
+18:25:02 INFO    porcja 32: 330 kart
+18:25:04 INFO    porcja 33: 340 kart
+18:25:06 INFO    porcja 34: 350 kart
+18:25:09 INFO    porcja 35: 360 kart
+18:25:12 INFO    porcja 36: 370 kart
+18:25:14 INFO    porcja 37: 380 kart
+18:25:16 INFO    porcja 38: 390 kart
+18:25:17 INFO    porcja 39: 400 kart
+18:25:19 INFO    porcja 40: 400 kart
+18:25:21 INFO    lista: 400 rekordów, 40 porcji
+18:25:33 INFO    start: http://localhost:3000, headless=True, przeglądarek=10, opóźnienie=0.50 s
+18:26:18 INFO    podstrony: 20/342
+18:26:48 INFO    podstrony: 40/342
+18:27:19 INFO    podstrony: 60/342
+18:27:47 INFO    podstrony: 80/342
+18:28:21 INFO    podstrony: 100/342
+18:28:50 INFO    podstrony: 120/342
+18:29:21 INFO    podstrony: 140/342
+18:29:51 INFO    podstrony: 160/342
+18:30:22 INFO    podstrony: 180/342
+18:30:51 INFO    podstrony: 200/342
+18:31:22 INFO    podstrony: 220/342
+18:31:51 INFO    podstrony: 240/342
+18:32:22 INFO    podstrony: 260/342
+18:32:50 INFO    podstrony: 280/342
+18:33:23 INFO    podstrony: 300/342
+18:33:52 INFO    podstrony: 320/342
+18:34:17 INFO    podstrony: 340/342
+18:34:19 INFO    podstrony: 342/342

@@ -1,0 +1,23 @@
+{
+  "post_id": 7,
+  "raw_html": {
+    "feed_cards": 10,
+    "feed_html_bytes": 17654,
+    "detail_spec_rows": 0,
+    "detail_list_items": 0,
+    "detail_read_more_elements": 0,
+    "detail_html_bytes": 3897
+  },
+  "dom_after_js": {
+    "feed_cards_initial_dom": 10,
+    "feed_cards": 400,
+    "detail_spec_rows": 5,
+    "detail_list_items": 3,
+    "detail_read_more_elements": 4
+  },
+  "fetch_endpoints": [
+    "/api/v1/feed",
+    "/api/v1/posts/7/additional-info",
+    "/api/v1/posts/7/read-more"
+  ]
+}

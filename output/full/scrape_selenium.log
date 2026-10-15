@@ -1,0 +1,64 @@
+20:43:02 INFO    MainThread start: http://localhost:3000, headless=True, przeglądarek=3, opóźnienie=0.50 s
+20:43:11 INFO    MainThread porcja 1: 20 kart
+20:43:12 INFO    MainThread porcja 2: 30 kart
+20:43:12 INFO    MainThread porcja 3: 40 kart
+20:43:15 INFO    MainThread porcja 4: 50 kart
+20:43:17 INFO    MainThread porcja 5: 60 kart
+20:43:20 INFO    MainThread porcja 6: 70 kart
+20:43:21 INFO    MainThread porcja 7: 80 kart
+20:43:22 INFO    MainThread porcja 8: 90 kart
+20:43:24 INFO    MainThread porcja 9: 100 kart
+20:43:24 INFO    MainThread porcja 10: 110 kart
+20:43:25 INFO    MainThread porcja 11: 120 kart
+20:43:28 INFO    MainThread porcja 12: 130 kart
+20:43:29 INFO    MainThread porcja 13: 140 kart
+20:43:31 INFO    MainThread porcja 14: 150 kart
+20:43:32 INFO    MainThread porcja 15: 160 kart
+20:43:35 INFO    MainThread porcja 16: 170 kart
+20:43:38 INFO    MainThread porcja 17: 180 kart
+20:43:41 INFO    MainThread porcja 18: 190 kart
+20:43:44 INFO    MainThread porcja 19: 200 kart
+20:43:46 INFO    MainThread porcja 20: 210 kart
+20:43:47 INFO    MainThread porcja 21: 220 kart
+20:43:49 INFO    MainThread porcja 22: 230 kart
+20:43:52 INFO    MainThread porcja 23: 240 kart
+20:43:54 INFO    MainThread porcja 24: 250 kart
+20:43:57 INFO    MainThread porcja 25: 260 kart
+20:43:58 INFO    MainThread porcja 26: 270 kart
+20:44:01 INFO    MainThread porcja 27: 280 kart
+20:44:02 INFO    MainThread porcja 28: 290 kart
+20:44:03 INFO    MainThread porcja 29: 300 kart
+20:44:04 INFO    MainThread porcja 30: 310 kart
+20:44:05 INFO    MainThread porcja 31: 320 kart
+20:44:07 INFO    MainThread porcja 32: 330 kart
+20:44:08 INFO    MainThread porcja 33: 340 kart
+20:44:10 INFO    MainThread porcja 34: 350 kart
+20:44:11 INFO    MainThread porcja 35: 360 kart
+20:44:14 INFO    MainThread porcja 36: 370 kart
+20:44:16 INFO    MainThread porcja 37: 380 kart
+20:44:18 INFO    MainThread porcja 38: 390 kart
+20:44:21 INFO    MainThread porcja 39: 400 kart
+20:44:23 INFO    MainThread porcja 40: 400 kart
+20:44:24 INFO    MainThread lista: 400 rekordów, 40 porcji
+20:44:24 INFO    MainThread podstrony do pobrania: 400 (pominięte z checkpointu: 0)
+20:45:02 INFO    MainThread podstrony: 20/400
+20:45:45 INFO    MainThread podstrony: 40/400
+20:46:24 INFO    MainThread podstrony: 60/400
+20:47:01 INFO    MainThread podstrony: 80/400
+20:47:38 INFO    MainThread podstrony: 100/400
+20:48:17 INFO    MainThread podstrony: 120/400
+20:48:56 INFO    MainThread podstrony: 140/400
+20:49:35 INFO    MainThread podstrony: 160/400
+20:50:07 INFO    MainThread podstrony: 180/400
+20:50:49 INFO    MainThread podstrony: 200/400
+20:51:28 INFO    MainThread podstrony: 220/400
+20:52:10 INFO    MainThread podstrony: 240/400
+20:52:46 INFO    MainThread podstrony: 260/400
+20:53:25 INFO    MainThread podstrony: 280/400
+20:54:05 INFO    MainThread podstrony: 300/400
+20:54:42 INFO    MainThread podstrony: 320/400
+20:55:23 INFO    MainThread podstrony: 340/400
+20:56:02 INFO    MainThread podstrony: 360/400
+20:56:39 INFO    MainThread podstrony: 380/400
+20:57:18 INFO    MainThread podstrony: 400/400
+20:57:26 INFO    MainThread PODSUMOWANIE: {"mode": "selenium", "headless": true, "workers": 3, "elapsed_s": 864.1, "peak_memory_mb": 1981.0, "feed_batches": 40, "pages_visited": 401, "records_feed": 400, "records_with_detail": 400, "records_final": 400, "errors": 0, "retries": 0, "requests": 1241, "dedup": {"before": 400, "duplicates_by_id": 0, "duplicates_by_content": 0, "after": 400}, "finished": "2026-10-14T20:57:26"}
