@@ -7,7 +7,7 @@ podstrony `/posts/:id` z danymi ładowanymi leniwie (scroll) i po kliknięciu �
 
 ```bash
 pip install -r requirements.txt
-# 1) uruchom serwis kolegi (docker: `make build && make run` w PJN-main, albo `node app.js` w project/) -> http://localhost:3000
+# 1) uruchom serwis (docker: `make build && make run` w PJN-main, albo `node app.js` w project/) -> http://localhost:3000
 # 2) pełny scraping (Selenium, 3 przeglądarki, headless) -> output/full/
 python scrape_selenium.py --headless --workers 3 --output-dir output/full
 # 3) analiza danych i wykresy -> output/analysis/
@@ -24,7 +24,7 @@ Przerwany przebieg wznawia się po ponownym uruchomieniu (checkpoint w `output/<
 ## GUI do podglądu (opcjonalnie)
 
 ```bash
-python gui.py          # albo dwuklik na start_gui.bat; serwis kolegi musi działać
+python gui.py          # albo dwuklik na start_gui.bat; serwis musi działać
 ```
 
 1. **„1. Pobierz listę (feed)”** – Selenium przewija `/feed`, tabela wypełnia się na żywo.
