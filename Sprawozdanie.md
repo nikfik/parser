@@ -195,26 +195,32 @@ pola – usunięto ją
 są na puste wartości, żeby nie zafałszować statystyk – dotyczy to też marki „Unknown”, którą
 traktujemy jako brak
 * pola tekstowe wstawiane przez textContent zawierają literalne encje (&nbsp;,
-&#39;), więc czyszczenie dekoduje encje i usuwa znaczniki (np. <strong> w opisach)
+&#39;), więc czyszczenie dekoduje encje i usuwa znaczniki
 * 52 dat w formacie z ukośnikiem jest realnie dwuznaczne (w danych występują i dd/mm, i mm/dd) przyjęto dd/mm z flagą date_quality = ambiguous zamiast cichego zgadywania
 
-## 6. omówienie statystyk i wnioski; 
+## 6. omówienie statystyk i wnioski
+
 <img width="915" height="292" alt="image" src="https://github.com/user-attachments/assets/c00abb3f-accb-40e0-b2bf-5f6f5b2c3a64" />
 
 <img width="858" height="311" alt="image" src="https://github.com/user-attachments/assets/509a2689-4c5f-4758-b3e2-1987e8cf2147" />
+
 Ceny nominalne mają rozkład zbliżony do jednostajnego (10–2 499), średnia 1 215 ≈ mediana 1 203. Po przeliczeniu na PLN rozkład jest silnie prawoskośny (średnia 2 837 ≫ mediana 1 265), z dużym skupiskiem przy niskich wartościach: 190 z 400 rekordów w pierwszym przedziale 0–1 031 zł, JPY i CZK nie przekraczają 500 zł, GBP/EUR/USD sięgają 10–12 tys. zł. To skutek mieszania walut i niezależnego losowania kwoty, a nie błąd parsera – wniosek: porównywanie cen bez przeliczenia jest bezzasadne, a
 wartości w PLN zależą od przyjętych stałych oraz przybliżonych kursów
 
 <img width="602" height="297" alt="image" src="https://github.com/user-attachments/assets/227d5803-e7f3-4d56-8c74-c032ce99cf62" />
+
 Mediany cen nominalnych są podobne we wszystkich walutach (od 1 123 do 1 296) co jest oczekiwane biorąc pod uwagę sposób generowania danych na stronie
 
 <img width="842" height="288" alt="image" src="https://github.com/user-attachments/assets/249fe137-b957-411d-a205-b826c9145014" />
+
 Polubienia (219–49 979), komentarze (18–2 494) i oceny (1,0–5,0) są równomiernie rozłożone, mediana ≈ średnia, brak wartości odstających. 
 
 Ocena ma 37 braków (9,2%) – analizowane n = 363.
 
 <img width="445" height="325" alt="image" src="https://github.com/user-attachments/assets/fe87bc2d-3a64-4e15-bc14-faf7614614cb" />
+
 <img width="462" height="408" alt="image" src="https://github.com/user-attachments/assets/3c731665-b99d-4e1b-a12c-cac1137cf44b" />
+
 Wszystkie współczynniki Korelacji są praktycznie zerowe.
 W prawdziwym serwisie oczekiwalibyśmy wyraźnie dodatniej zależności polubienia–komentarze
 , więc pomimo jej sensu merytorycznego fakt, że
@@ -223,9 +229,11 @@ dane zostały wygenerowane losowo i niezależnie zgadza się ze
 Pozostałe pary mogły by mieć uzasadnienie merytoryczne, ale były by one mocno zależne od algorytmów, a np pary jak (tag–cena itd.) nie mają uzasadnienia merytorycznego dla
 zależności, więc wynik ≈ 0 jest tu zgodny z oczekiwaniem.
 
-## 7. porównanie surowego HTML z drzewem DOM.
+## 7. porównanie surowego HTML z drzewem DOM
+
 Surowy HTML pobrany requests, bez przeglądarki, i DOM po wykonaniu JS w Selenium
 <img width="893" height="187" alt="image" src="https://github.com/user-attachments/assets/c76c1d52-7b44-4352-8485-5e76e61a4edf" />
+
 **Wniosek:** Surowy HTML zawiera tylko 10 z 400 rekordów (2,5%) – pozostałe 390 (97,5%) powstają dopiero w przeglądarce, po kolejnych wywołaniach fetch wyzwalanych przewijaniem. Na podstronie surowy HTML nie ma żadnego z atrybutów ze specyfikacji, listy szczegółów i „Read more” (0 elementów wobec 12 w DOM) - to 9 z 33 pozyskanych atrybutów. Parser oparty wyłącznie o requests zebrałby więc tylko
 2,5% rekordów, i to bez tych 9 atrybutów. Wykryte żądania fetch: /api/v1/feed,
 /api/v1/posts/7/additional-info, /api/v1/posts/7/read-more
