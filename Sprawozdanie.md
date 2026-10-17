@@ -12,9 +12,47 @@ kart, pojawił się wiersz tabeli), a nie na zgadywany czas; serwis losuje opó�
 * **psutil** – pomiar pamięci
 * **pytest** – testy jednostkowe
 
-## 2. opis zbudowanego serwisu (rola AUTOR) — struktura, sposób generowania, wybrane utrudnienia i 
-powód wyboru; 
+## 2. opis zbudowanego serwisu (rola AUTOR) — struktura, sposób generowania, wybrane utrudnienia i powód wyboru; 
+### 2.1 struktura
+| Element | Opis |
+|---------|------|
+| Stos    | Node.js + Express 5, stacji EJS, dane w database/data.json (400 rekordów); uruchomiony w Dockerze lub node app.js. |
+| Trasy   | <ul><li>GET /feed (lista)</li><li> GET /posts/:id (szczegóły)</li><li>/api/v1/posts?limit&offset</li><li> /api/v1/posts/:id/additional-info</li><li> /api/v1/posts/:id/read-more. </li></ul>|
+| Lista   | 10 kart renderowanych serwerowo (klasa post_title...), kolejne porcje po 10 dodawane przy scrollu (klasa post-title...); dwie różne struktury tych samych danych. |
+| Podstrony | Podstronne strony z HTML; *Specifications* (tabela z informacjami o specyfikacji), *Product details* (listą dodatkowych informacji o sentinelie, sekcja „Read more” po kliknięciu przycisku, w jednej z trzech losowych kolejności elementu). |
 
+### 2.2 sposób generowania
+do generowania danych wykorzystano skrypt python
+
+https://github.com/88Michael88/PJN/blob/03a35c4af78f72af457d63b12b9e7c68f73e3e1b/generate_data.py#L133-L191
+
+### 2.3 Wybrane Rozszerzenia
+#### Serwis Rozszrzenia 4.0
+
+* niespójne formaty dat w tym samym polu (2026-08-26, 26.08.2026, „wczoraj")
+* 
+  https://github.com/88Michael88/PJN/blob/03a35c4af78f72af457d63b12b9e7c68f73e3e1b/generate_data.py#L53-L60
+  https://github.com/88Michael88/PJN/blob/03a35c4af78f72af457d63b12b9e7c68f73e3e1b/generate_data.py#L85-L100
+  
+* encje i znaki specjalne w treści (& nbsp;, & oacute;, twarde spacje w liczbach)
+
+ https://github.com/88Michael88/PJN/blob/03a35c4af78f72af457d63b12b9e7c68f73e3e1b/generate_data.py#L62-L82
+  
+* ceny zapisane jako „1 299,00 zł", a u części rekordów w innej walucie
+
+https://github.com/88Michael88/PJN/blob/03a35c4af78f72af457d63b12b9e7c68f73e3e1b/generate_data.py#L48-L51
+https://github.com/88Michael88/PJN/blob/03a35c4af78f72af457d63b12b9e7c68f73e3e1b/generate_data.py#L103-L116
+
+#### Serwis Rozszrzenia 5.0
+
+* minimum jeden atrybut widoczny dopiero po interakcji
+  
+https://github.com/88Michael88/PJN/blob/03a35c4af78f72af457d63b12b9e7c68f73e3e1b/generate_data.py#L170-L189
+  
+* losowa kolejność atrybutów w karcie produktu
+https://github.com/88Michael88/PJN/blob/03a35c4af78f72af457d63b12b9e7c68f73e3e1b/generate_data.py#L121-L130
+  
+  
 ## 3. opis parsera (rola PARSER) — wybrane rozszerzenia oraz zastosowane selektory wraz z uzasadnieniem,
 
 ### 3.1 Przepływ.  
@@ -50,9 +88,9 @@ BeautifulSoup.
 
 →generowanie wykresów
 
-## 3.2 Wybrane Rozszerzenia
+### 3.2 Wybrane Rozszerzenia
 
-### Pareser Rozszrzenia 4.0
+#### Pareser Rozszrzenia 4.0
 * walidacja typów wszystkich kolumn i raport z liczbą odrzuconych wartości
 
 oczyszczona baza na której bazuje parser jest tworzona w build_dataset.py
@@ -96,7 +134,7 @@ https://github.com/nikfik/parser/blob/ab688e44ea22822aa2d00542bbbacd1ff964a72f/s
   * fresh - flaga zaczęcia od 0  i ignorowanie już zgromadzonych danych
   https://github.com/nikfik/parser/blob/ab688e44ea22822aa2d00542bbbacd1ff964a72f/scrape_selenium.py#L340-L356
 
-### Pareser Rozszrzenia 5.0
+#### Pareser Rozszrzenia 5.0
 * automatyczny zrzut ekranu i zapis źródła strony przy każdym błędzie, do celów diagnostycznych
   
 diagnose() zapisuje PNG i HTML do output/…/errors/, pojedynczy błąd nie
