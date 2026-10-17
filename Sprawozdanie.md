@@ -30,13 +30,13 @@ https://github.com/88Michael88/PJN/blob/03a35c4af78f72af457d63b12b9e7c68f73e3e1b
 #### Serwis Rozszrzenia 4.0
 
 * niespójne formaty dat w tym samym polu (2026-08-26, 26.08.2026, „wczoraj")
-* 
-  https://github.com/88Michael88/PJN/blob/03a35c4af78f72af457d63b12b9e7c68f73e3e1b/generate_data.py#L53-L60
-  https://github.com/88Michael88/PJN/blob/03a35c4af78f72af457d63b12b9e7c68f73e3e1b/generate_data.py#L85-L100
+  
+https://github.com/88Michael88/PJN/blob/03a35c4af78f72af457d63b12b9e7c68f73e3e1b/generate_data.py#L53-L60
+https://github.com/88Michael88/PJN/blob/03a35c4af78f72af457d63b12b9e7c68f73e3e1b/generate_data.py#L85-L100
   
 * encje i znaki specjalne w treści (& nbsp;, & oacute;, twarde spacje w liczbach)
 
- https://github.com/88Michael88/PJN/blob/03a35c4af78f72af457d63b12b9e7c68f73e3e1b/generate_data.py#L62-L82
+https://github.com/88Michael88/PJN/blob/03a35c4af78f72af457d63b12b9e7c68f73e3e1b/generate_data.py#L62-L82
   
 * ceny zapisane jako „1 299,00 zł", a u części rekordów w innej walucie
 
@@ -50,6 +50,7 @@ https://github.com/88Michael88/PJN/blob/03a35c4af78f72af457d63b12b9e7c68f73e3e1b
 https://github.com/88Michael88/PJN/blob/03a35c4af78f72af457d63b12b9e7c68f73e3e1b/generate_data.py#L170-L189
   
 * losowa kolejność atrybutów w karcie produktu
+
 https://github.com/88Michael88/PJN/blob/03a35c4af78f72af457d63b12b9e7c68f73e3e1b/generate_data.py#L121-L130
   
   
