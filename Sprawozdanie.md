@@ -20,6 +20,7 @@ powód wyboru;
 ### 3.1 Przepływ.  
 
 **1. Faza listy:**
+
 → Otwarcie /feed, pętla „przewiń do końca 
 
 → WebDriverWait aż przybędzie kart albo pojawi się komunikat o końcu wyczerpania rekordów
@@ -38,6 +39,7 @@ powód wyboru;
 BeautifulSoup.
 
 **3. Łączenie danych listy i podstron:**
+
 →czyszczenie
 
 →deduplikacja
