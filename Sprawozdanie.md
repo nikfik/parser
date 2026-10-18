@@ -276,5 +276,4 @@ Surowy HTML pobrany requests, bez przeglądarki, i DOM po wykonaniu JS w Seleniu
 <img width="893" height="187" alt="image" src="https://github.com/user-attachments/assets/c76c1d52-7b44-4352-8485-5e76e61a4edf" />
 
 **Wniosek:** Surowy HTML zawiera tylko 10 z 400 rekordów (2,5%) – pozostałe 390 (97,5%) powstają dopiero w przeglądarce, po kolejnych wywołaniach fetch wyzwalanych przewijaniem. Na podstronie surowy HTML nie ma żadnego z atrybutów ze specyfikacji, listy szczegółów i „Read more” (0 elementów wobec 12 w DOM) - to 9 z 33 pozyskanych atrybutów. Parser oparty wyłącznie o requests zebrałby więc tylko
-2,5% rekordów, i to bez tych 9 atrybutów. Wykryte żądania fetch: /api/v1/feed,
-/api/v1/posts/7/additional-info, /api/v1/posts/7/read-more
+2,5% rekordów, i to bez tych 9 atrybutów
